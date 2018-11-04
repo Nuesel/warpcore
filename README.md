@@ -1,4 +1,6 @@
 # warpcore
+A warpcore, consisting of multiple RGB LED stripes piled on each other. Each LED stripe is addressed by several PCA9685 via I2C (PWM each LED color). The warpcore server is controlled via a TCP connection using JSON.
+
 To compile, type:
 g++ commandline.cpp general.cpp gpio.cpp ./jsoncpp.cpp program.cpp pca9685.cpp socket_server.cpp presets.cpp running_leds.cpp warpkern_rings.cpp -o program -lwiringPi -lboost_thread-mt -lboost_system
 WiringPi library (http://wiringpi.com/download-and-install/) as well as boost libaries for threads and system are needed.
